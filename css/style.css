@@ -379,7 +379,12 @@ p {
   .box4 {
     height: 750px;
   }
- 
+   .item1 h3,.item3 h3 {
+    font-size: 20px;
+  }
+  .item1 .ficons,.item3 .ficons {
+    font-size: 20px;
+  }
   .aboutus p {
     line-height: 25px;
     font-size: 20px;
