@@ -349,7 +349,11 @@ p {
     font-size:25px;
   }
 /* footer css ends */
-
+  @media screen and (max-width:1200px){
+  .box5 {
+    height: 800px;
+  }
+}
   @media screen and (max-width:720px) { 
    
    ul.design li a i.fa{
