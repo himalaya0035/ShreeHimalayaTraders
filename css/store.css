@@ -98,6 +98,7 @@ body {
     display: flex;
     justify-content:space-between;
   }
+  @media screen and (min-width:720px){
   ::-webkit-scrollbar {
     width:20px;
 }
@@ -111,4 +112,17 @@ body {
         rgba(230, 198, 143, 0.7),
         rgba(175, 222, 204,1)
     );
+}
+  }
+@media screen and (max-width:1200px){
+  .box {
+    width: 300px;
+    height: 315px;
+  }
+}
+@media screen and (max-width:720px){
+  .box {
+    width: 375px;
+    height: 325px;
+  }
 }
