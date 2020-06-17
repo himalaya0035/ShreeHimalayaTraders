@@ -1,3 +1,4 @@
+var count =0;
 var loader = document.querySelector(".loader") // the loader object stores the reference of the div element with class loade
 console.log(loader); // for debugging purposes
 window.addEventListener("load",vanish); // when the windows loads vanish function is executed
@@ -9,18 +10,17 @@ window.addEventListener("load",vanish); // when the windows loads vanish functio
      $(this).addClass('iactive').siblings().removeClass('iactive')
  })
  /* above code is used for toggling the active links */
- var count =0;
- function changeImg() {
+/* for toggling betwwen veiw cart and hide cart */
+ function changeCommand() {
+     var ele = document.getElementById("changetext");
      if (count==0){
-         document.getElementById("changeimg").src="images/face1 (2).jpg";
+        ele.innerHTML='<i class="fa fa-shopping-cart">' + '</i> ' +  'Hide cart';
         count=1;
      }
-     else if(count==1){
-        document.getElementById("changeimg").src="images/face1 (3).jpg";
-        count=2;
-     }
      else {
-        document.getElementById("changeimg").src="images/face1 (1).jpg";
-        count=0; 
-     }
+        ele.innerHTML='<i class="fa fa-shopping-cart">' + '</i> ' +  'View cart';
+        count=0;
+    }
+     
  }
+ /* toggling cart ends */
