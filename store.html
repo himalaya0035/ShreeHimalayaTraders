@@ -4,154 +4,259 @@
     <meta charset="utf-8">
     <title>🛒 Store</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/store.css">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/store.css">
   </head>
   <body>
-    <h1 class="product_company">Devdarshan Products</h1>
-    <div class="container-store">
-        <div class="box">
-            <div class="imgbx">
-              <img src="images/dev3.JPG" alt="">
+    <!--Navbar( made entirely in bootstrap with some custom changes)-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+      <div class="navbar-header">
+        <a href="index.html" class="navbar-brand">Shree Himalaya Traders</a>
+        <button name="button" class="navbar-toggle" data-target="#target" data-toggle="collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+       </button>
+      </div>
+       <div class="collapse navbar-collapse" id="target">
+         <ul class="nav navbar-nav">
+           <li><a href="index.html">Home</a></li>
+           <li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">Products we deal in <span class="caret"></span></a>
+           <ul class="dropdown-menu">
+             <li><a href="">Sanjeevni Tea</a></li>
+             <li><a href="">Devdarshan Dhoop</a></li>
+             <li><a href="">Madhusudhan</a></li>
+           </ul>
+           </li>
+           <li><a href="#abtus">About us</a></li>
+           <li class="active"><a href="store.html">Store</a></li>
+         </ul> 
+         <!--This is visible when screen size is large, medium and small-->
+         <ul class="nav navbar-nav navbar-right hidden-xs">
+          <li><a href="mailto:shreehimalaya@gmail.com" class="display"><i class="fa fa-envelope"></i></a></li>
+          <li><a href="" class="display"><i class="fa fa-facebook-official"></i></a></li>
+          <li><a href="" class="display"><i class="fa fa-twitter"></i></a></li>
+        </ul>
+        <!--This works when screen size is extra small-->
+         <ul class="nav navbar-nav navbar-right hidden-lg hidden-md hidden-sm">
+           <li class="dropdown">
+           <a href="" class="dropdown-toggle" data-toggle="dropdown">Follow us<span class="caret"></span></a>
+           <ul class="dropdown-menu">
+           <li><a href="mailto:shreehimalaya@gmail.com" class="display"><i class="fa fa-envelope"> Mail us </i></a></li>
+           <li><a href="" class="display"><i class="fa fa-facebook-official"> Facebook</i></a></li>
+           <li><a href="" class="display"><i class="fa fa-twitter"> Twitter</i></a></li>
+           </ul>
+           </li>
+         </ul>
+       </div>
+      </div>  
+    </nav>
+   <!--Navbar code ends--> 
+   <div class="cart_icon">
+    <button class="btn btn-success" data-toggle="collapse" id="changetext" onclick="changeCommand()" data-target="#showCart"><i class="fa fa-shopping-cart"></i> View Cart</button>
+   </div>
+   <div class="superset">
+     <div class="product_list">
+        <h1 class="product_company">Devdarshan Products</h1>
+        <div class="container-store">
+            <div class="box">
+                <div class="imgbx">
+                  <img src="images/dev3.JPG" alt="">
+                </div>
+                <div class="content">
+                  <div class="product-title">
+                    <h3>Premium Dhoop</h3>
+                    <button class="btn btn-success">Add to Cart</button>
+                  </div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                      when an unknown s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                      </p>
+                </div>
             </div>
-            <div class="content">
-              <div class="product-title">
-                <h3>Premium Dhoop</h3>
-                <button class="btn btn-success">Add to Cart</button>
-              </div>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                  when an unknown s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-                  </p>
+            <div class="box">
+                <div class="imgbx">
+                  <img src="images/dev4.JPG" alt="Bhagwan jaane kyu nahi aa rahi image">
+                </div>
+                <div class="content">
+                  <div class="product-title">
+                    <h3>Amber cones</h3>
+                    <button class="btn btn-success">Add to Cart</button>
+                  </div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                      when an unknown s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                      </p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgbx">
+                  <img src="images/dev5.JPG" alt="">
+                </div>
+                <div class="content">
+                  <div class="product-title">
+                    <h3>Incense sticks</h3>
+                    <button class="btn btn-success">Add to Cart</button>
+                  </div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                      when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                      but also e 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more<br><br>
+                      </p>
+                </div>
             </div>
         </div>
-        <div class="box">
-            <div class="imgbx">
-              <img src="images/dev4.JPG" alt="Bhagwan jaane kyu nahi aa rahi image">
+        <h1 class="product_company">Sanjeevani Products</h1>
+        <div class="container-store">
+            <div class="box">
+                <div class="imgbx">
+                  <img src="images/san5.JPG" alt="">
+                </div>
+                <div class="content">
+                  <div class="product-title">
+                    <h3>Sanjeevani Gold</h3>
+                    <button class="btn btn-success">Add to Cart</button>
+                  </div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                      when an unknown s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                      </p>
+                </div>
             </div>
-            <div class="content">
-              <div class="product-title">
-                <h3>Amber cones</h3>
-                <button class="btn btn-success">Add to Cart</button>
-              </div>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                  when an unknown s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-                  </p>
+            <div class="box">
+                <div class="imgbx">
+                  <img src="images/san7.JPG" alt="">
+                </div>
+                <div class="content">
+                  <div class="product-title">
+                    <h3>Sanjeevani Tara</h3>
+                    <button class="btn btn-success">Add to Cart</button>
+                  </div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                      when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                      but also the lealease of Letraset sheets containing Lorem Ipsum passages, and more
+                      </p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgbx">
+                  <img src="images/san6.JPG" alt="">
+                </div>
+                <div class="content">
+                  <div class="product-title">
+                    <h3>Sanjeevani Regular</h3>
+                    <button class="btn btn-success">Add to Cart</button>
+                  </div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                      when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                      but also e 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more<br><br>
+                      </p>
+                </div>
             </div>
         </div>
-        <div class="box">
-            <div class="imgbx">
-              <img src="images/dev5.JPG" alt="">
+        <h1 class="product_company">Madhusudhan Products</h1>
+        <div class="container-store">
+            <div class="box">
+                <div class="imgbx">
+                  <img src="images/mad4.JPG" alt="">
+                </div>
+                <div class="content">
+                  <div class="product-title">
+                    <h3>Product one</h3>
+                    <button class="btn btn-success">Add to Cart</button>
+                  </div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                      when an unknown s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+        
+                      </p>
+                </div>
             </div>
-            <div class="content">
-              <div class="product-title">
-                <h3>Incense sticks</h3>
-                <button class="btn btn-success">Add to Cart</button>
-              </div>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                  when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                   but also e 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more<br><br>
-                  </p>
+            <div class="box">
+                <div class="imgbx">
+                  <img src="images/mad3.JPG" alt="">
+                </div>
+                <div class="content">
+                  <div class="product-title">
+                    <h3>Product two</h3>
+                    <button class="btn btn-success">Add to Cart</button>
+                  </div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                      when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                      but also the lealease of Letraset sheets containing Lorem Ipsum passages, and more
+                      </p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgbx">
+                  <img src="images/mad2.JPG" alt="">
+                </div>
+                <div class="content">
+                    <div class="product-title">
+                    <h3>Product three</h3>
+                    <button class="btn btn-success">Add to Cart</button>
+                  </div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                      when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                      but also e 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more<br><br>
+                      </p>
+                </div>
             </div>
         </div>
+   </div>
+        <div class="display_cart collapse out" id="showCart">
+          <h2 class="section_header">Cart</h2>
+          <div class="cart_row">
+              <span class="cart_item cart_header cart_column">Item</span>
+              <span class="cart_amt cart_header cart_column">Price</span>
+              <span class="cart_quantity cart_header cart_column">Quantity</span>
+          </div>
+          <div class="cart_row">
+           <div class="cart_item cart_column">
+              <img src="images/dev4.JPG" alt="" class="cart_item_image">
+              <span class="cart_item_title">AMBER</span>
+           </div>
+              <span class="cart_amt cart_column">Rs100</span>
+             <div class="cart_quantity cart_column">
+                  <input type="number" name="" id="" class="cart_quantity_input" value="1" min="0">
+                  <button type="button" class="btn btn-danger">Remove</button>
+          </div> 
+          </div>
+          <div class="cart_row">
+            <div class="cart_item cart_column">
+               <img src="images/dev4.JPG" alt="" class="cart_item_image">
+               <span class="cart_item_title">AMBER</span>
+            </div>
+               <span class="cart_amt cart_column">Rs100</span>
+              <div class="cart_quantity cart_column">
+                   <input type="number" name="" id="" class="cart_quantity_input" value="1" min="0">
+                   <button type="button" class="btn btn-danger">Remove</button>
+           </div> 
+           </div>  
+            <div class="cart_total">
+                <strong class="cart_total_title">Total Amount</strong>
+                <strong class="cart_total_price"></strong>
+            </div> 
+            <button type="button" class="btn btn-primary purchase">Purchase</button>
+        </div>
+   </div>
+    <!--footer html-->
+    <div class="box6" id="footer">
+      <div class="item1"><h3>Follow us :</h3>
+      <a href=""><i class="fa fa-facebook-official ficons"></i></a>
+      <a href=""><i class="fa fa-twitter ficons"></i></a>
+      <a href=""><i class="fa fa-linkedin ficons"></i></a>
+      </div>
+      <div class="item2"><h5>&copy (2020) Shree Himalaya Traders <br>All Right Reserved.</h5>
+        <h6 id="developer" class="hidden-sm hidden-xs">Site created by : Himalaya Gupta, Connect with me on <a href=""><i class="fa fa-linkedin"></i></a></h6>
+      </div>
+      <div class="item3"><h3>Mail us : </h3>
+        <a href=""><i class="fa fa-envelope ficons"></i></a>
+        <a href=""><i class="fa fa-map-marker ficons"></i></a>     
+      </div>
     </div>
-    <h1 class="product_company">Sanjeevani Products</h1>
-    <div class="container-store">
-        <div class="box">
-            <div class="imgbx">
-              <img src="images/san5.JPG" alt="">
-            </div>
-            <div class="content">
-              <div class="product-title">
-                <h3>Sanjeevani Gold</h3>
-                <button class="btn btn-success">Add to Cart</button>
-              </div>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                  when an unknown s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-                  </p>
-            </div>
-        </div>
-        <div class="box">
-            <div class="imgbx">
-              <img src="images/san7.JPG" alt="">
-            </div>
-            <div class="content">
-              <div class="product-title">
-                <h3>Sanjeevani Tara</h3>
-                <button class="btn btn-success">Add to Cart</button>
-              </div>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                  when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                   but also the lealease of Letraset sheets containing Lorem Ipsum passages, and more
-                  </p>
-            </div>
-        </div>
-        <div class="box">
-            <div class="imgbx">
-              <img src="images/san6.JPG" alt="">
-            </div>
-            <div class="content">
-              <div class="product-title">
-                <h3>Sanjeevani Regular</h3>
-                <button class="btn btn-success">Add to Cart</button>
-              </div>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                  when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                   but also e 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more<br><br>
-                  </p>
-            </div>
-        </div>
-    </div>
-    <h1 class="product_company">Madhusudhan Products</h1>
-    <div class="container-store">
-        <div class="box">
-            <div class="imgbx">
-              <img src="images/mad4.JPG" alt="">
-            </div>
-            <div class="content">
-              <div class="product-title">
-                <h3>Product one</h3>
-                <button class="btn btn-success">Add to Cart</button>
-              </div>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                  when an unknown s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-    
-                  </p>
-            </div>
-        </div>
-        <div class="box">
-            <div class="imgbx">
-              <img src="images/mad3.JPG" alt="">
-            </div>
-            <div class="content">
-              <div class="product-title">
-                <h3>Product two</h3>
-                <button class="btn btn-success">Add to Cart</button>
-              </div>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                  when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                   but also the lealease of Letraset sheets containing Lorem Ipsum passages, and more
-                  </p>
-            </div>
-        </div>
-        <div class="box">
-            <div class="imgbx">
-              <img src="images/mad2.JPG" alt="">
-            </div>
-            <div class="content">
-                <div class="product-title">
-                <h3>Product three</h3>
-                <button class="btn btn-success">Add to Cart</button>
-              </div>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                  when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                   but also e 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more<br><br>
-                  </p>
-            </div>
-        </div>
-    </div>
+    <!--footer html ends-->
+    <script src="js/stylepre.js"></script> <!--our own js-->
   </body>
 </html>
