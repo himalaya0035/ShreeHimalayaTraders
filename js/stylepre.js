@@ -14,11 +14,11 @@ window.addEventListener("load",vanish); // when the windows loads vanish functio
  function changeCommand() {
      var ele = document.getElementById("changetext");
      if (count==0){
-        ele.innerHTML='<i class="fa fa-shopping-cart">' + '</i> ' +  'Hide cart';
+        ele.innerHTML='Hide cart';
         count=1;
      }
      else {
-        ele.innerHTML='<i class="fa fa-shopping-cart">' + '</i> ' +  'View cart';
+        ele.innerHTML='View cart';
         count=0;
     }
      
