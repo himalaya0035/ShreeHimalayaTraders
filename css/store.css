@@ -125,6 +125,9 @@ body {
   height:auto;
   border-radius: 10px;
 }
+#changetext{
+  padding: 12px;
+}
 /* Below is the css for the cart */
 .cart_header {
   font-weight: bold;
@@ -238,7 +241,12 @@ body {
   }
   .display_cart {
     order:1;
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-right: 0px;
+    width:370px;
+  }
+  .purchase {
+    margin-left: 140px;
   }
   .product_list {
     order:2;
