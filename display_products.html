@@ -2,159 +2,174 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Display_Products</title>
-     <!--Bootsrap css,js and jquery-->
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-     <!--Fonatawesome and google fonts-->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-     <link rel="stylesheet" href="css/store.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Bootsrap css,js and jquery-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!--Fonatawesome and google fonts-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--My own css-->
+    <link rel="stylesheet" href="css/style.css"> 
+    <title>Home Page</title>
 </head>
 <body>
-    <div class="product_list">
-        <h1 class="product_company">Devdarshan Products</h1>
-        <div class="container-store">
-            <div class="box">
-                <div class="imgbx">
-                  <img src="images/dev3.JPG" alt="">
-                </div>
-                <div class="content">
-                  <div class="product-title">
-                    <h3>Premium Dhoop</h3>
-                    <button class="btn btn-success">Add to Cart</button>
+    <!--Preloader-->
+    <div class="loader">
+        <img src="images/load-gif.gif" alt="">
+      </div>
+    <!--Preloader ends-->
+    <!--Navbar( made entirely in bootstrap with some custom changes)-->
+   <!--Navbar( made entirely in bootstrap with some custom changes)-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+      <div class="navbar-header">
+        <a href="index.html" class="navbar-brand">Shree Himalaya Traders</a>
+        <button name="button" class="navbar-toggle" data-target="#target" data-toggle="collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+       </button>
+      </div>
+       <div class="collapse navbar-collapse" id="target">
+         <ul class="nav navbar-nav">
+           <li class="active"><a href="index.html">Home</a></li>
+           <li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">Products we deal in <span class="caret"></span></a>
+           <ul class="dropdown-menu">
+             <li><a href="">Sanjeevni Tea</a></li>
+             <li><a href="">Devdarshan Dhoop</a></li>
+             <li><a href="">Madhusudhan</a></li>
+           </ul>
+           </li>
+           <li><a href="#abtus">About us</a></li>
+           <li><a href="store.html">Store</a></li>
+         </ul> 
+         <!--This is visible when screen size is large, medium and small-->
+         <ul class="nav navbar-nav navbar-right hidden-xs">
+          <li><a href="mailto:shreehimalaya@gmail.com" class="display"><i class="fa fa-envelope"></i></a></li>
+          <li><a href="" class="display"><i class="fa fa-facebook-official"></i></a></li>
+          <li><a href="" class="display"><i class="fa fa-twitter"></i></a></li>
+        </ul>
+        <!--This works when screen size is extra small-->
+         <ul class="nav navbar-nav navbar-right hidden-lg hidden-md hidden-sm">
+           <li class="dropdown">
+           <a href="" class="dropdown-toggle" data-toggle="dropdown">Follow us<span class="caret"></span></a>
+           <ul class="dropdown-menu">
+           <li><a href="mailto:shreehimalaya@gmail.com" class="display"><i class="fa fa-envelope"> Mail us </i></a></li>
+           <li><a href="" class="display"><i class="fa fa-facebook-official"> Facebook</i></a></li>
+           <li><a href="" class="display"><i class="fa fa-twitter"> Twitter</i></a></li>
+           </ul>
+           </li>
+         </ul>
+       </div>
+      </div>  
+    </nav>
+     <!--Navbar code ends--> 
+     <!-- grid system starts (css3)-->
+     <div class="grid1">
+        <div class="box1" id="carousel">
+            <!--Carousel code starts (bootstrap + custom made media queries)-->
+             <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <div class="slide1"></div>
+                    <div class="carousel-caption">
+                      <button class="btn btn-primary"  style="margin-bottom: 15px;">Order Now</button>
+                    </div>
                   </div>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                      when an unknown s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-                      </p>
-                </div>
-            </div>
-            <div class="box">
-                <div class="imgbx">
-                  <img src="images/dev4.JPG" alt="Bhagwan jaane kyu nahi aa rahi image">
-                </div>
-                <div class="content">
-                  <div class="product-title">
-                    <h3>Amber cones</h3>
-                    <button class="btn btn-success">Add to Cart</button>
+            
+                  <div class="item">
+                    <div class="slide2"></div>
+                    <div class="carousel-caption">
+                      <button class="btn btn-primary" style="margin-bottom: 15px;">Order Now</button>
+                    </div>
                   </div>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                      when an unknown s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-                      </p>
-                </div>
-            </div>
-            <div class="box">
-                <div class="imgbx">
-                  <img src="images/dev5.JPG" alt="">
-                </div>
-                <div class="content">
-                  <div class="product-title">
-                    <h3>Incense sticks</h3>
-                    <button class="btn btn-success">Add to Cart</button>
+            
+                  <div class="item">
+                    <div class="slide3"></div>
+                    <div class="carousel-caption">
+                    <button class="btn btn-primary"  style="margin-bottom: 15px;">Order Now</button>
+                    </div>
                   </div>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                      when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                      but also e 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more<br><br>
-                      </p>
                 </div>
-            </div>
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                  
+                </a>
+              </div>
+    
         </div>
-        <h1 class="product_company">Sanjeevani Products</h1>
-        <div class="container-store">
-            <div class="box">
-                <div class="imgbx">
-                  <img src="images/san5.JPG" alt="">
-                </div>
-                <div class="content">
-                  <div class="product-title">
-                    <h3>Sanjeevani Gold</h3>
-                    <button class="btn btn-success">Add to Cart</button>
-                  </div>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                      when an unknown s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-                      </p>
-                </div>
-            </div>
-            <div class="box">
-                <div class="imgbx">
-                  <img src="images/san7.JPG" alt="">
-                </div>
-                <div class="content">
-                  <div class="product-title">
-                    <h3>Sanjeevani Tara</h3>
-                    <button class="btn btn-success">Add to Cart</button>
-                  </div>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                      when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                      but also the lealease of Letraset sheets containing Lorem Ipsum passages, and more
-                      </p>
-                </div>
-            </div>
-            <div class="box">
-                <div class="imgbx">
-                  <img src="images/san6.JPG" alt="">
-                </div>
-                <div class="content">
-                  <div class="product-title">
-                    <h3>Sanjeevani Regular</h3>
-                    <button class="btn btn-success">Add to Cart</button>
-                  </div>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                      when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                      but also e 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more<br><br>
-                      </p>
-                </div>
-            </div>
+        <!--Carousel code ends-->
+        <div class="box2" id="schemes">
+            <ul class="design"> <!--  FUTURE NOTES define functionality to single and double click-->
+                <li class="litem iactive"><a href="display_products.html" target="myiframe" onclick="window.location='store.html'"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span class="hidden-xs hidden-sm hidden-md"> Order now</span></a></li>
+                <li class="litem"><a href="" target="myiframe"><i class="fa fa-gift" aria-hidden="true"></i> <span class="hidden-xs hidden-sm hidden-md"> Schemes</span></a></li>
+                <li class="litem"><a href="coming_soon.html" target="myiframe"><i class="fa fa-sign-in" aria-hidden="true"></i> <span class="hidden-xs hidden-sm hidden-md"> Login</span></a></li>
+                <li class="litem"><a href="coming_soon.html" target="myiframe"><i class="fa fa-user-plus"></i><span class="hidden-xs hidden-sm hidden-md"> Register</span></a></li>
+            </ul>
         </div>
-        <h1 class="product_company">Madhusudhan Products</h1>
-        <div class="container-store">
-            <div class="box">
-                <div class="imgbx">
-                  <img src="images/mad4.JPG" alt="">
-                </div>
-                <div class="content">
-                  <div class="product-title">
-                    <h3>Product one</h3>
-                    <button class="btn btn-success">Add to Cart</button>
-                  </div>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                      when an unknown s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-        
-                      </p>
-                </div>
-            </div>
-            <div class="box">
-                <div class="imgbx">
-                  <img src="images/mad3.JPG" alt="">
-                </div>
-                <div class="content">
-                  <div class="product-title">
-                    <h3>Product two</h3>
-                    <button class="btn btn-success">Add to Cart</button>
-                  </div>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                      when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                      but also the lealease of Letraset sheets containing Lorem Ipsum passages, and more
-                      </p>
-                </div>
-            </div>
-            <div class="box">
-                <div class="imgbx">
-                  <img src="images/mad2.JPG" alt="">
-                </div>
-                <div class="content">
-                    <div class="product-title">
-                    <h3>Product three</h3>
-                    <button class="btn btn-success">Add to Cart</button>
-                  </div>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                      when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                      but also e 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more<br><br>
-                      </p>
-                </div>
-            </div>
+        <div class="box3" id="order">
+          <iframe src="display_products.html" name="myiframe" frameborder="0"></iframe>
         </div>
-   </div>
+       <!--About us section-->
+        <div class="box4">
+          <div class="aboutus">
+            <h1>About Us</h1>
+            <p><img src="images/face1 (2).jpg" alt="">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.  et modi in impedit vitae  officiis vero error ipsum repellendus deleniti hic qui sed assumenda. Accusantium harum Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit at possimus, esse soluta nemo sequi, maxime, nobis facilis nostrum a necessitatibus neque iusto! Perspiciatis magni iusto obcaecati praesentium nobis! Fugit, fugiat perspiciatis eveniet voluptates veritatis ad esse saepe voluptas. Blanditiis placeat reiciendis iusto ad ratione accusamus numquam cupiditate voluptatibus sint. illo distinctio. Tempore beatae debitis eius similique sequi corporis at  distinctio amet voluptatibus est! <span class="hidden-xs"> Laboriosam, sed labore? Libero at nemo,  voluptate ex incidunt dolores et nostrum. Obcaecati illum porro maxime labore. Cupiditate laudantium optio accusamus. Quasi omnis maxime laboriosam veritatis deserunt sapiente ad a sunt dolorem itaque. Vero, commodi perspiciatis!</span>
+            </p>
+          </div>
+        </div>
+        <div class="box5" id="contactus">
+          <div class="f1">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <p>Our address</p>
+            <p id="show" style="font-size: 20px;">Shree Himalaya Traders, near Baroda UttarPradesh Gramin Bank, Fatehganj (W) Bareilly, U.P - 243501</p>
+          </div>
+          <div class="f1">
+            <form action="">
+              <fieldset>
+                <legend>Contact form</legend>
+              <input type="text" placeholder="FirstName">
+              <input type="text" placeholder="LastName">
+              <input type="email" name="" id="" placeholder="Email id">
+              <input type="tel" name="" id="" placeholder="Contact no"> <br>
+              <input type="button" value="Submit">
+            </fieldset>
+            </form>
+          </div>
+          <div class="f1">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <p>Call us</p>
+            <p id="show1"><a href="tel:9149063159" style="font-size: 35px;">+91-9149063159</a><br><a href="tel:9759589059" style="font-size: 35px;">+91-9759589059</a></p>
+          </div>
+        </div>
+        <div class="box6" id="footer">
+          <div class="item1"><h3>Follow us :</h3>
+          <a href=""><i class="fa fa-facebook-official ficons"></i></a>
+          <a href=""><i class="fa fa-twitter ficons"></i></a>
+          <a href=""><i class="fa fa-linkedin ficons"></i></a>
+          </div>
+          <div class="item2"><h5>&copy (2020) Shree Himalaya Traders <br>All Right Reserved.</h5>
+            <h6 id="developer" class="hidden-sm hidden-xs">Site created by : Himalaya Gupta, Connect with me on <a href=""><i class="fa fa-linkedin"></i></a></h6>
+          </div>
+          <div class="item3"><h3>Mail us : </h3>
+            <a href=""><i class="fa fa-envelope ficons"></i></a>
+            <a href=""><i class="fa fa-map-marker ficons"></i></a>     
+          </div>
+        </div>
+     </div>
+     <script src="js/stylepre.js"></script> <!--our own js-->
 </body>
 </html>
