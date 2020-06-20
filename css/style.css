@@ -223,14 +223,14 @@ body {
  input:focus {
    border: 2px solid rgba(42, 168, 120, 0.692);
  }
- input[type="button"] {
+ input[type="submit"] {
    background-color: rgb(33, 175, 33);
    outline:none;
    border: none;
    font-size: 20px;
    transition: ease 0.3s;
  }
- input[type="button"]:hover {
+ input[type="submit"]:hover {
   background-color: rgb(14, 211, 14);
  }
  input[type="tel"] {
