@@ -138,14 +138,14 @@
             <p id="show" style="font-size: 20px;">Shree Himalaya Traders, near Baroda UttarPradesh Gramin Bank, Fatehganj (W) Bareilly, U.P - 243501</p>
           </div>
           <div class="f1">
-            <form action="">
+            <form action="message.html" method="post" onsubmit="return validateForm();">
               <fieldset>
                 <legend>Contact form</legend>
-              <input type="text" placeholder="FirstName">
-              <input type="text" placeholder="LastName">
-              <input type="email" name="" id="" placeholder="Email id">
-              <input type="tel" name="" id="" placeholder="Contact no"> <br>
-              <input type="button" value="Submit">
+              <input type="text" placeholder="FirstName" id="FirstName" class="inputs">
+              <input type="text" placeholder="LastName" id="LastName" class="inputs">
+              <input type="email" name="" id="" placeholder="Email id" id="email" class="inputs">
+              <input type="tel" name="" id="" placeholder="Contact no" id="tel_no" class="inputs" maxlength="12" minlength="10"> <br>
+              <input type="submit" value="Submit">
             </fieldset>
             </form>
           </div>
@@ -171,5 +171,44 @@
         </div>
      </div>
      <script src="js/stylepre.js"></script> <!--our own js-->
+     <script>
+       /* frontend form validation Home page starts */
+    var live_check = document.getElementById("FirstName");
+    var live_check_two = document.getElementById("LastName");
+    live_check.addEventListener("input",function(event){
+        var live = event.target;
+        if (live.value.length > 2){
+            live.style.borderColor ="rgba(42, 168, 120, 0.692)" ;
+        }
+    });
+    live_check_two.addEventListener("input",function(event){
+        var live = event.target;
+        if (live.value.length > 2){
+            live.style.borderColor ="rgba(42, 168, 120, 0.692)" ;
+        }
+    });
+    function validateForm(){
+        var x = confirm("Want to Submit the form ?");
+        if (x==true){
+            var box = document.getElementsByClassName("inputs");
+            for (var i=0; i< box.length ; i++){
+                if (box[i].value==""){
+                    box[i].style.borderColor="red";
+                    alert("The field marked in red cannot be empty");
+                    return false;
+                }
+                if (box[i].value.length < 3 && (i==0 || i==1)){
+                    alert("Name should contain atleast three characters");
+                    box[i].style.borderColor="red";
+                    return false;
+                }
+            }
+       }
+       else {
+           return false;
+       }
+       }
+      /* form validation ends */
+     </script>
 </body>
 </html>
